@@ -1,0 +1,26 @@
+.container-counter-app2{
+  display: flex;
+  flex-direction: column; 
+  gap:1rem;
+  height: 100%;
+ }
+ 
+ .button-counter-app2 {
+   border-radius: 0.375rem;
+   background-color: #EDF2F7;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   height: 2.5rem;
+   font-weight: bold;
+ }
+ 
+ .container-app2{
+   margin: 1.2rem;
+   height: 100%;
+ }
+
+ .h-100{
+  height: 100%;
+ }
+ 

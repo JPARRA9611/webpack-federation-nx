@@ -1,0 +1,119 @@
+.diagramComponent {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.overviewComponent {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  right: 20px;
+  bottom: 50px;
+  background-color: 'white';
+  z-index: 300;
+  border: solid 1px hsl(0, 0%, 80%);
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: all 700ms;
+}
+
+.zoomSlider {
+  opacity: 0.85;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background-color: transparent;
+  z-index: 300;
+  border: none;
+  margin-top: 120px;
+}
+
+.zoomButton {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 0;
+  transition: opacity 0.2s;
+  background: 'white';
+  cursor: pointer;
+  border: solid 1px hsl(0, 0%, 80%);
+  border-radius: 6px;
+}
+
+.zoomButton:hover {
+  background-color: #eeeeee;
+}
+
+.zoomRangeContainer {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  cursor: pointer;
+}
+
+.zoomRangeInput {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  transition: opacity 0.2s;
+  background: transparent;
+}
+
+/* Set up additional styling to ensure consistenty across browsers */
+.zoomRangeInput::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 4px;
+  background: 'gray';
+}
+.zoomRangeInput::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 4px;
+  background: 'gray';
+}
+.zoomRangeInput::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 4px;
+  background: 'gray';
+  color: transparent;
+}
+.zoomRangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -3.33px;
+  box-sizing: border-box;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: 'blue';
+  cursor: pointer;
+}
+.zoomRangeInput::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: 'blue';
+  cursor: pointer;
+}
+.zoomRangeInput::-ms-thumb {
+  margin-top: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: 'blue';
+  cursor: pointer;
+}
+.zoomRangeInput::-ms-tooltip,
+.zoomRangeInput::-ms-fill-lower,
+.zoomRangeInput::-ms-fill-upper {
+  display: none;
+}

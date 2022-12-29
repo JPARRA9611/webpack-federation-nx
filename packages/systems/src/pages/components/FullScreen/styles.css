@@ -1,0 +1,19 @@
+.full-screen-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1017;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  transition: opacity 0.2s;
+  background: 'white';
+  cursor: pointer;
+  border: solid 1px hsl(0, 0%, 80%);
+  border-radius: 6px;
+  padding: 8px 15px;
+}
+
+.full-screen-button:hover {
+  background-color: #eeeeee;
+}
